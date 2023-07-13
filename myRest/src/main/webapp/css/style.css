@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Tilt Prism', cursive; */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.ui-page.ui-body-c{
+    /* background: url(../images/4854835.png) no-repeat center; */
+    background-size: cover;
+    box-shadow: 0 0 30px 5px rgba(107, 105, 105, 0.25) inset,
+                0 0 0 1px rgba(107, 105, 105, 0.4) inset;
+}
+
+.ui-grid-a .ui-block-a,
+.ui-grid-a .ui-block-b{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#brand{
+    color: rgba(4, 4, 4, 0.7);
+    text-shadow: -1px -1px 10px rgba(107, 105, 105, 0.4);
+    text-align: center;
+}
+#brand h1{
+    border-bottom: 1px solid rgba(65, 38, 37, 0.6);
+    background: url(../images/cutlery.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position:center;
+    font-size: 2.5em;
+    font-weight: 700;
+    height: 65px;
+    line-height: 50px;
+    display: inline-block;
+    padding-top: 20px;
+}
+#brand span{
+    margin-left:26px;
+    margin-right:26px;
+    white-space:nowrap;
+}
+.choice_list span.number{
+    padding:8px 10px 4px;
+    background:rgba(65, 38, 37, 0.7);
+    border-radius:7px;
+    color:#fff;
+    margin-right:10px;
+    font-size:0.6em;
+}
+.choice_list h2{
+    margin-bottom:1.0em;
+}
+.choice_list h3{
+    padding-top:10px;
+    color:rgba(63, 41, 39);
+    font-weight:600;
+}
+#restaurant_v .ui-btn-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#restaurant_v .ui-li-thumb, 
+#restaurant_v .ui-listview .ui-li-icon {
+    position: static;
+    margin-left: 1px;
+    top: 0;
+    max-height: 120px;
+    max-width: 120px;
+    padding:5px;
+}
+#restaurant_v .ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, 
+#restaurant_v .ui-li-static.ui-li-has-thumb{
+    padding-left:10px;
+}
+#restaurant_v .ui-link-inherit{
+    width:100%;
+    display:flex;
+}
+#restaurant_v .roadView{
+    width:180px;
+    height:120px;
+    background:#ddd;
+    margin-right:15px;
+}
+#restaurant_v .context-box{
+    font-size: 18px;
+    color: #fa8b04;
+}
+.ui-icon-tel{
+    background-image: url("../images/customer-service-fill.svg");
+}
+#restau_infos .roadView2{
+    width: 100%;
+    height: 180px;
+    background: #ddd;
+}
+#contact_infos .map{
+    width: 100%;
+    height: 170px;
+    background: #ddd;
+    margin-top: 20px;
+}
+#notation{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#notation div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+textarea.ui-input-text{
+    height: 150px;
+}
+/* select */
+#note_utilisateur-menu li{
+    padding-left: 120px;
+    position: relative;
+
+}
+#note_utilisateur-menu li::after{
+    content: "";
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path style='fill:rgb(237,147,17);' d='M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z'></path></svg>") repeat-x;
+    background-position: left center;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#note_utilisateur-menu li:first-child:after{
+    width: 20px;
+}
+#note_utilisateur-menu li:nth-child(2):after{
+    width: 40px;
+}
+#note_utilisateur-menu li:nth-child(3):after{
+    width: 60px;
+}
+#note_utilisateur-menu li:nth-child(4):after{
+    width: 80px;
+}
+#note_utilisateur-menu li:last-child:after{
+    width: 100px;
+}
+#reviewform{
+    margin-bottom: 40px;
+}
+.roadView{
+	width: 100%;
+	height: 170px;
+	
+}
+/**************** members.jsp **********************/
+h1.memberform-h1{
+	margin:0;
+}
+#memberform{
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+ul.members{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.members li>label{
+	font-weight: 600;
+	padding-top: 5px;
+}
+ul.members li>fieldset>label{
+	font-weight: 600;
+	padding-top: 5px;
+}
+ul.members li div.genderbox{
+	display: flex;
+	justify-content: space-around;
+}
+div.genderbox div.ui-radio{
+	width:40%;
+}
+li.li-post.ui-btn-up-c{
+	border-bottom: none;
+}
+li.li-post.ui-li-static.ui-li{
+	padding-bottom: 0;
+}
+li.li-address.ui-btn-up-c{
+	border-top: none;
+}
+#idtext{
+	margin-top: 10px;
+}
+/*************** memberlist ****************/
+#memberlist li>label{
+	vertical-align: middle;
+	display: inline-block;
+	padding: 5px 10px;
+	width: 75px;
+	box-sizing: border-box;
+	background: #ddd;
+	font-weight: bold;
+	white-space: nowrap;
+	text-align: center;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+#memberlist label.job{
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 5px 10px;
+	width: 75px;
+	box-sizing: border-box;
+	background: #ddd;
+	font-weight: bold;
+	white-space: nowrap;
+	text-align: center;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+li[data-role=list-divider]{
+	background: #ccc;
+}
+ul.memberlist li div.genderbox{
+	display: flex;
+	justify-content: space-around;
+}
+
+.text-right{
+	text-align: center;
+}
+
